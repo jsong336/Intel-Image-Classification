@@ -11,10 +11,10 @@ model = None
 if __name__ == "__main__":
     os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
-    if len(argv) != 3 :
-        print("Please enter all required arguments")
+    if len(argv) == 2 and argv[1] == '-l':
+        print(MAP)
     
-    else:
+    elif len(argv) == 3:
         model = None
         img = None
 
@@ -36,3 +36,6 @@ if __name__ == "__main__":
             print(MAP[ndx[0]])
         except:
             raise Exception("Unable to predict")
+
+    else:
+        print("Please enter all required arguments")
