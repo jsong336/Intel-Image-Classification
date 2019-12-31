@@ -1,6 +1,7 @@
 # ImageScene
 ## Training
-** Change hyperparameters in CONST.py
+1. Change hyperparameters in CONST.py
+2. Download intel-image-classification image to the directory
 ```
   python3 model.py
 ```
