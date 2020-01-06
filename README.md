@@ -1,4 +1,4 @@
-# ImageScene
+# Intel Image Classification
 ## Training
 1. Change hyperparameters in CONST.py
 2. Download intel-image-classification image to the directory
